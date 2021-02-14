@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		926D2FB32AD716AF863ADEDF /* Pods_graduate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70616807FE356EBCFD2C07FD /* Pods_graduate.framework */; };
+		DB11DD3B25D8CE00009AB05F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */; };
 		DB2AB96C25B95E83004BD205 /* SideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AB96B25B95E83004BD205 /* SideTableViewController.swift */; };
+		DB2D74C425CFF6A8004A5074 /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB2D74C325CFF6A8004A5074 /* Satisfy-Regular.ttf */; };
 		DB45F49825B66C9E00E22EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */; };
 		DB45F49A25B66C9E00E22EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */; };
 		DB45F49F25B66C9E00E22EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45F49D25B66C9E00E22EC8 /* Main.storyboard */; };
@@ -28,7 +30,9 @@
 		115950DF87D5F89A8682E470 /* Pods-graduate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-graduate.release.xcconfig"; path = "Target Support Files/Pods-graduate/Pods-graduate.release.xcconfig"; sourceTree = "<group>"; };
 		70616807FE356EBCFD2C07FD /* Pods_graduate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_graduate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80647AAF6DB4981DFA8CC03 /* Pods-graduate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-graduate.debug.xcconfig"; path = "Target Support Files/Pods-graduate/Pods-graduate.debug.xcconfig"; sourceTree = "<group>"; };
+		DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB2AB96B25B95E83004BD205 /* SideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTableViewController.swift; sourceTree = "<group>"; };
+		DB2D74C325CFF6A8004A5074 /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
 		DB45F49425B66C9E00E22EC8 /* graduate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = graduate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,10 +79,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB2D74C125CFF48B004A5074 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB2D74C325CFF6A8004A5074 /* Satisfy-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DB45F48B25B66C9E00E22EC8 = {
 			isa = PBXGroup;
 			children = (
 				DB45F49625B66C9E00E22EC8 /* graduate */,
+				DB2D74C125CFF48B004A5074 /* Fonts */,
 				DB45F49525B66C9E00E22EC8 /* Products */,
 				57F8D92774668968272CC046 /* Pods */,
 				560EEB5FD2B387EFC7EE4757 /* Frameworks */,
@@ -96,6 +109,7 @@
 		DB45F49625B66C9E00E22EC8 /* graduate */ = {
 			isa = PBXGroup;
 			children = (
+				DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */,
 				DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */,
 				DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */,
 				DB45F4BF25B82E6600E22EC8 /* View */,
@@ -143,6 +157,7 @@
 				DB45F49125B66C9E00E22EC8 /* Frameworks */,
 				DB45F49225B66C9E00E22EC8 /* Resources */,
 				BED5715D8317D96740A6D7CA /* [CP] Embed Pods Frameworks */,
+				0126B80B20D9EBE976835DD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB45F4A425B66C9E00E22EC8 /* LaunchScreen.storyboard in Resources */,
+				DB2D74C425CFF6A8004A5074 /* Satisfy-Regular.ttf in Resources */,
+				DB11DD3B25D8CE00009AB05F /* GoogleService-Info.plist in Resources */,
 				DB45F4A125B66C9E00E22EC8 /* Assets.xcassets in Resources */,
 				DB45F49F25B66C9E00E22EC8 /* Main.storyboard in Resources */,
 			);
@@ -199,6 +216,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0126B80B20D9EBE976835DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-graduate/Pods-graduate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-graduate/Pods-graduate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-graduate/Pods-graduate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BED5715D8317D96740A6D7CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

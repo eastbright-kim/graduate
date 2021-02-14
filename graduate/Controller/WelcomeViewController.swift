@@ -6,7 +6,16 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class WelcomeViewController: UIViewController {
+    
+    @IBOutlet var signInButton: GIDSignInButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+    }
     
 }
