@@ -12,59 +12,41 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="graduate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="graduate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMj-nn-E8o">
-                                <rect key="frame" x="30" y="599" width="354" height="59"/>
-                                <color key="backgroundColor" red="0.96087801399999995" green="0.96087801399999995" blue="0.96087801399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wMj-nn-E8o" secondAttribute="height" multiplier="30:5" id="rcq-8t-58C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWx-nf-WTO">
-                                <rect key="frame" x="30" y="673" width="354" height="59"/>
-                                <color key="backgroundColor" red="0.96087801395939088" green="0.96087801395939088" blue="0.96087801395939088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="pWx-nf-WTO" secondAttribute="height" multiplier="30:5" id="JZZ-LE-KU2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PoetreeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="E75-s1-38B">
                                 <rect key="frame" x="130" y="245" width="154" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="E75-s1-38B" secondAttribute="height" multiplier="1:1" id="oA4-Tk-o93"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q3t-Jy-g6i" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="659" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <action selector="signInButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="540-og-apK"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="E75-s1-38B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="RRJ-B4-Njb"/>
-                            <constraint firstItem="pWx-nf-WTO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="U3W-bg-iDV"/>
-                            <constraint firstItem="wMj-nn-E8o" firstAttribute="top" secondItem="E75-s1-38B" secondAttribute="bottom" constant="200" id="Z44-V1-wJm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wMj-nn-E8o" secondAttribute="trailing" constant="30" id="abC-3a-dq9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pWx-nf-WTO" secondAttribute="trailing" constant="30" id="bTb-MJ-eT6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E75-s1-38B" secondAttribute="trailing" constant="130" id="bZX-aV-1hA"/>
-                            <constraint firstItem="wMj-nn-E8o" firstAttribute="centerX" secondItem="pWx-nf-WTO" secondAttribute="centerX" id="hVK-xO-Nbt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWx-nf-WTO" secondAttribute="bottom" constant="130" id="hqM-Ge-NFa"/>
-                            <constraint firstItem="pWx-nf-WTO" firstAttribute="top" secondItem="wMj-nn-E8o" secondAttribute="bottom" constant="15" id="ktJ-5c-8Bb"/>
-                            <constraint firstItem="wMj-nn-E8o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tPA-iD-tGs"/>
+                            <constraint firstItem="E75-s1-38B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="oPK-SK-ZYu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="eTf-oj-g0q" kind="presentation" identifier="userLogedIn" modalPresentationStyle="fullScreen" id="n7y-vH-UZJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="129"/>
+            <point key="canvasLocation" x="-278" y="133"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rBj-RR-2u6">
@@ -102,9 +84,6 @@
                     <navigationItem key="navigationItem" id="3HG-Sr-P1j">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="G0N-fA-nVM"/>
                     </navigationItem>
-                    <connections>
-                        <segue destination="eTf-oj-g0q" kind="presentation" identifier="registerToMain" modalPresentationStyle="fullScreen" id="8Rm-NZ-Qbq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftc-OU-JSY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,9 +309,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="CD4-gq-iAI"/>
-                    <connections>
-                        <segue destination="eTf-oj-g0q" kind="presentation" identifier="logInToMain" modalPresentationStyle="fullScreen" id="2G2-bu-DCf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5S-hU-c9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,9 +431,6 @@
             <point key="canvasLocation" x="5386" y="1260"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="2G2-bu-DCf"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="PoetreeIcon" width="500" height="500"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
