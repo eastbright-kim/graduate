@@ -10,6 +10,8 @@ import GoogleSignIn
 import Firebase
 
 class WelcomeViewController: UIViewController, GIDSignInDelegate{
+    
+    public static var user: GIDGoogleUser!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +19,6 @@ class WelcomeViewController: UIViewController, GIDSignInDelegate{
         GIDSignIn.sharedInstance().delegate = self
         
     }
-    
-    
     
     @IBAction func signInButton() {
         
@@ -37,6 +37,7 @@ class WelcomeViewController: UIViewController, GIDSignInDelegate{
             if error != nil {
                 return
             } else {
+                WelcomeViewController.user = user
                 self.performSegue(withIdentifier: "userLogedIn", sender: self)
             }
         }

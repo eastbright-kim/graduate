@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Poetree"
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Satisfy-Regular", size: 20)!]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,7 +24,4 @@ class MainViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
-    
-
 }

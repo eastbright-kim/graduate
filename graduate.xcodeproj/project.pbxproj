@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		926D2FB32AD716AF863ADEDF /* Pods_graduate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70616807FE356EBCFD2C07FD /* Pods_graduate.framework */; };
 		DB11DD3B25D8CE00009AB05F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */; };
+		DB20097725D997AB003E410F /* TodaysPoemCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20097625D997AB003E410F /* TodaysPoemCollectionReusableView.swift */; };
 		DB2AB96C25B95E83004BD205 /* SideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AB96B25B95E83004BD205 /* SideTableViewController.swift */; };
 		DB2D74C425CFF6A8004A5074 /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB2D74C325CFF6A8004A5074 /* Satisfy-Regular.ttf */; };
+		DB3CCDF425D94910009B2042 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CCDF325D94910009B2042 /* Webservice.swift */; };
+		DB3CCDF925D94DFE009B2042 /* PoetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CCDF825D94DFE009B2042 /* PoetModel.swift */; };
 		DB45F49825B66C9E00E22EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */; };
 		DB45F49A25B66C9E00E22EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */; };
 		DB45F49F25B66C9E00E22EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45F49D25B66C9E00E22EC8 /* Main.storyboard */; };
 		DB45F4A125B66C9E00E22EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB45F4A025B66C9E00E22EC8 /* Assets.xcassets */; };
 		DB45F4A425B66C9E00E22EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45F4A225B66C9E00E22EC8 /* LaunchScreen.storyboard */; };
 		DB45F4B225B82CD600E22EC8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F4B125B82CD600E22EC8 /* WelcomeViewController.swift */; };
-		DB45F4B525B82CF800E22EC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F4B425B82CF800E22EC8 /* LoginViewController.swift */; };
-		DB45F4B825B82D0400E22EC8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F4B725B82D0400E22EC8 /* RegisterViewController.swift */; };
 		DB45F4BB25B82D1F00E22EC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F4BA25B82D1F00E22EC8 /* MainViewController.swift */; };
 		DBD86C2B25CCC79E00F92CA4 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD86C2A25CCC79E00F92CA4 /* WritingViewController.swift */; };
 		DBD86C2E25CCC87800F92CA4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD86C2D25CCC87800F92CA4 /* Constant.swift */; };
 		DBD86C3325CCC9EE00F92CA4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD86C3225CCC9EE00F92CA4 /* CollectionViewController.swift */; };
-		DBD86C3625CCCC7700F92CA4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD86C3525CCCC7700F92CA4 /* CollectionViewCell.swift */; };
+		DBD86C3625CCCC7700F92CA4 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD86C3525CCCC7700F92CA4 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,11 @@
 		70616807FE356EBCFD2C07FD /* Pods_graduate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_graduate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80647AAF6DB4981DFA8CC03 /* Pods-graduate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-graduate.debug.xcconfig"; path = "Target Support Files/Pods-graduate/Pods-graduate.debug.xcconfig"; sourceTree = "<group>"; };
 		DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB20097625D997AB003E410F /* TodaysPoemCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysPoemCollectionReusableView.swift; sourceTree = "<group>"; };
 		DB2AB96B25B95E83004BD205 /* SideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTableViewController.swift; sourceTree = "<group>"; };
 		DB2D74C325CFF6A8004A5074 /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		DB3CCDF325D94910009B2042 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		DB3CCDF825D94DFE009B2042 /* PoetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetModel.swift; sourceTree = "<group>"; };
 		DB45F49425B66C9E00E22EC8 /* graduate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = graduate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,13 +45,11 @@
 		DB45F4A325B66C9E00E22EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB45F4A525B66C9E00E22EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB45F4B125B82CD600E22EC8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		DB45F4B425B82CF800E22EC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DB45F4B725B82D0400E22EC8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DB45F4BA25B82D1F00E22EC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DBD86C2A25CCC79E00F92CA4 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 		DBD86C2D25CCC87800F92CA4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		DBD86C3225CCC9EE00F92CA4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		DBD86C3525CCCC7700F92CA4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DBD86C3525CCCC7700F92CA4 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		DB3CCDF225D948D5009B2042 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				DB3CCDF325D94910009B2042 /* Webservice.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		DB3CCDF725D94DEA009B2042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3CCDF825D94DFE009B2042 /* PoetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB45F48B25B66C9E00E22EC8 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +127,8 @@
 		DB45F49625B66C9E00E22EC8 /* graduate */ = {
 			isa = PBXGroup;
 			children = (
+				DB3CCDF725D94DEA009B2042 /* Model */,
+				DB3CCDF225D948D5009B2042 /* Webservice */,
 				DB11DD3A25D8CE00009AB05F /* GoogleService-Info.plist */,
 				DB45F49725B66C9E00E22EC8 /* AppDelegate.swift */,
 				DB45F49925B66C9E00E22EC8 /* SceneDelegate.swift */,
@@ -126,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				DB45F4B125B82CD600E22EC8 /* WelcomeViewController.swift */,
-				DB45F4B725B82D0400E22EC8 /* RegisterViewController.swift */,
-				DB45F4B425B82CF800E22EC8 /* LoginViewController.swift */,
 				DB45F4BA25B82D1F00E22EC8 /* MainViewController.swift */,
 				DB2AB96B25B95E83004BD205 /* SideTableViewController.swift */,
 				DBD86C2A25CCC79E00F92CA4 /* WritingViewController.swift */,
@@ -140,7 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				DB45F49D25B66C9E00E22EC8 /* Main.storyboard */,
-				DBD86C3525CCCC7700F92CA4 /* CollectionViewCell.swift */,
+				DBD86C3525CCCC7700F92CA4 /* CustomCollectionViewCell.swift */,
+				DB20097625D997AB003E410F /* TodaysPoemCollectionReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,17 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB45F4B525B82CF800E22EC8 /* LoginViewController.swift in Sources */,
 				DBD86C2B25CCC79E00F92CA4 /* WritingViewController.swift in Sources */,
+				DB3CCDF425D94910009B2042 /* Webservice.swift in Sources */,
 				DBD86C2E25CCC87800F92CA4 /* Constant.swift in Sources */,
-				DB45F4B825B82D0400E22EC8 /* RegisterViewController.swift in Sources */,
 				DBD86C3325CCC9EE00F92CA4 /* CollectionViewController.swift in Sources */,
 				DB45F4B225B82CD600E22EC8 /* WelcomeViewController.swift in Sources */,
 				DB45F4BB25B82D1F00E22EC8 /* MainViewController.swift in Sources */,
 				DB45F49825B66C9E00E22EC8 /* AppDelegate.swift in Sources */,
 				DB45F49A25B66C9E00E22EC8 /* SceneDelegate.swift in Sources */,
+				DB20097725D997AB003E410F /* TodaysPoemCollectionReusableView.swift in Sources */,
 				DB2AB96C25B95E83004BD205 /* SideTableViewController.swift in Sources */,
-				DBD86C3625CCCC7700F92CA4 /* CollectionViewCell.swift in Sources */,
+				DBD86C3625CCCC7700F92CA4 /* CustomCollectionViewCell.swift in Sources */,
+				DB3CCDF925D94DFE009B2042 /* PoetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
